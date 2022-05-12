@@ -4,7 +4,7 @@
 const Ent = require('../models/ent.model'); 
 
 const homePageDelivery =  (request, response) => {
-    response.send("Hello, JRF world!  Ya hearin me?  Go Hawks.")
+    response.send("Hello, JRF world!  Ya hearin me?  Go Sounders.")
 }; 
 
 const createEnt = (request, response) => {

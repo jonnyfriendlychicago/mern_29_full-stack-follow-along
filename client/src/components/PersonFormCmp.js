@@ -8,10 +8,11 @@ const PersonFormCmp = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault(); 
-        axios.post("http://localhost:8000/api/people", {
-            firstName, 
-            lastName
-        })
+        axios
+            .post("http://localhost:8000/api/people", {
+                firstName, 
+                lastName
+            })
             .then(res=> {
                 console.log(res); 
                 console.log(res.data); 
@@ -34,18 +35,6 @@ const PersonFormCmp = () => {
         </form>
     )
 
-    // useEffect( () => {
-    //     axios
-    //         .get("http://localhost:8000/api")
-    //         .then(res => messageSetter(res.data.message))
-    //         .catch(err => console.log(err))
-    // }, []); 
-
-    // return (
-    //     <div> 
-    //         <h2>Message from the darkside of the moon: {message}</h2>
-    //     </div>
-    // )
 }; 
 
 export default PersonFormCmp; 
